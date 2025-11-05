@@ -4,7 +4,7 @@ module miniALU (
     input logic operation, //if low preform add/sub, if high preform aritmetic shift
     input logic sign, //if low add/left shift, if high sub/right shift
     output logic [19:0] result
-) 
+); 
 always_comb begin
     if (operation) begin 
         if (sign) begin 
@@ -22,5 +22,4 @@ always_comb begin
             result = op1 + op2; //addition
         end
     end
-end
 endmodule
