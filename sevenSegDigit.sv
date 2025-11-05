@@ -37,5 +37,6 @@ always_comb begin
       displayBits = 1110111; //9
     end
     default: displayBits = 0000000; //Nothing
-end 
+  endcase
+end
 endmodule
