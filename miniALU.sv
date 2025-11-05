@@ -22,4 +22,5 @@ always_comb begin
             result = op1 + op2; //addition
         end
     end
+end
 endmodule
