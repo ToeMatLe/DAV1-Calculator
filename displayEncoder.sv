@@ -1,5 +1,5 @@
 module displayEncoder (
-  input logic [18:0] result,
+  input logic [19:0] result,
   output logic [3:0] numberBits [0:3]
 );
 int temp;
