@@ -13,7 +13,7 @@ always_comb begin
       displayBits = 7'b0000110; //1
     end
     4'b0010: begin 
-      displayBits = 7'b1011011; //2
+      displayBits = 7'db1011011; //2
     end
     4'b0011: begin 
       displayBits = 7'b1001111; //3
@@ -38,5 +38,7 @@ always_comb begin
     end
     default: displayBits = 7'b0000000; //Nothing
   endcase
+  //Invert display bits
+    displayBits = ~displayBits;
 end
 endmodule
