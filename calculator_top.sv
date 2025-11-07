@@ -2,7 +2,7 @@ module calculator_top(
 input logic clk,
 
 output logic [6:0] segBits
-output logic [3:0] trigger
+output logic [3:0] trigger,
 input logic [3:0] op1,
 input logic [3:0] op2,
 input logic operation, 
@@ -21,7 +21,6 @@ seg_driver DUT1 (
 );
 
 miniAlu DUT2 (
-    .clk(clk),
     .result(result),
     .op1(op1),
     .op2(op2),
