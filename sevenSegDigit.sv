@@ -34,7 +34,7 @@ always_comb begin
       displayBits = 7'b1111111; //8
     end
     4'b1001: begin 
-      displayBits = 7'b1110111; //9
+      displayBits = 7'b1110011; //9
     end
     default: displayBits = 7'b0000000; //Nothing
   endcase
